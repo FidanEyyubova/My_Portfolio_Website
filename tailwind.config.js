@@ -4,6 +4,7 @@ module.exports = {
     "./index.html",
   ],
   mode: "jit",
+  important: "true",
   theme: {
     extend: {
       colors: {
