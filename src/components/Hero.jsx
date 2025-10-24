@@ -5,7 +5,7 @@ import { ComputersCanvas } from "./canvas/Computers";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto   bg-[url('bg3.jpg')] bg-cover bg-center bg-no-repeat`}>
+    <section className={`relative w-full h-screen mx-auto   bg-[url('herobg.png')] bg-cover bg-center bg-no-repeat`}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto !sm:px-16 !px-6 flex flex-row items-start gap-5`}
       >
