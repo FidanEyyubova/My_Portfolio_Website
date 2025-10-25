@@ -24,7 +24,7 @@ const Navbar = () => {
     ${active === Link.title ? "text-white" : "text-[#9c9a9a]"}
     hover:text-white 
     text-[18px]
-    font-semibold 
+    font-medium
     cursor-pointer
     transition 
     duration-300 

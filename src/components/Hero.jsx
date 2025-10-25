@@ -23,8 +23,8 @@ const Hero = () => {
           <p
             className={`!sm:text-[18px] !text-[25px] uppercase tracking-wider mt-5 `}
           >
-            I develop 3D visuals, user <br className="sm:block hidden" />
-            interfaces and web applications
+            I build responsive, user-friendly, <br className="sm:block hidden" />
+            and visually appealing web apps.
           </p>
         </div>
       </div>
