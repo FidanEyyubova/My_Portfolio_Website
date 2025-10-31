@@ -1,7 +1,9 @@
 import menu from "./menu.svg";
-import close from "./close.svg"; // or ./close.png
+import close from "./close.svg";
+import code from "./coding.png"
 
 export {
   menu,
   close,
+  code,
 };
