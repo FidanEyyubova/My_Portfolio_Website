@@ -1,3 +1,5 @@
+import { code } from "../assets";
+
 export const navLinks = [
   {
     id: "about",
@@ -14,20 +16,20 @@ export const navLinks = [
 ];
 
 export const services = [
-  {
-    title: "Developer",
-    icon: "web",
+   {
+    title: "Front-End Developer",
+    icon: code,
   },
   {
-    title: "Developer",
-    icon: "mobile",
+    title: "React Developer",
+    icon: code,
+  },
+   {
+    title: "Responsive Web Designer",
+    icon: code,
   },
   {
-    title: "Backend Developer",
-    icon: "backend",
-  },
-  {
-    title: "Content Creator",
-    icon: "creator",
+    title: "API & Data Integration",
+    icon: code,
   },
 ];
