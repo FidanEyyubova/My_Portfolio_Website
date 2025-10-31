@@ -17,7 +17,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className="bg-[#0d0f20] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className="bg-[#0d0f20] rounded-[20px] py-5 px-12 min-h-[280px] flex  justify-evenly items-center flex-col"
       >
         <img
           src={icon}
@@ -56,11 +56,16 @@ const About = () => {
         My goal is to build web experiences that people enjoy using every day.
       </motion.p>
 
-      <div className="mt-20 flex cursor-pointer gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
+      <div className="mt-20 grid gap-10 
+                grid-cols-1 
+                sm:grid-cols-2 
+                lg:grid-cols-4
+                cursor-pointer
+                ">
+  {services.map((service, index) => (
+    <ServiceCard key={service.title} index={index} {...service} />
+  ))}
+</div>
     </div>
   );
 };
