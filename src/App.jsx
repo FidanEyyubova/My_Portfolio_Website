@@ -5,6 +5,7 @@ import Experience from './components/Experience'
 import Tech from './components/Tech'
 import Certificate from './components/Certificate'
 import Education from './components/Education'
+import Works from './components/Works'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Tech />
         <Education />
         <Certificate />
+        <Works />
       </div>
     </div>
   )
