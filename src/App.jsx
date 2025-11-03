@@ -6,12 +6,16 @@ import Tech from './components/Tech'
 import Certificate from './components/Certificate'
 import Education from './components/Education'
 import Works from './components/Works'
+import Contact from './components/Contact'
+import StarsCanvas from './components/canvas/Star'
 
 function App() {
-
   return (
-    <div className='relative z-0 bg-[#050816]'>
-      <div className='bg-hero-pattern bg-over bg-no-repeat bg-center'>
+    <div className="relative z-0 bg-[#050816] min-h-screen overflow-hidden">
+      {/* 🔹 Bütün səhifə üçün ulduzlu fon */}
+      <StarsCanvas />
+
+      <div className="relative z-10">
         <Navbar />
         <Hero />
         <About />
@@ -20,9 +24,10 @@ function App() {
         <Education />
         <Certificate />
         <Works />
+        <Contact />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
