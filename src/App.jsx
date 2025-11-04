@@ -11,8 +11,7 @@ import StarsCanvas from './components/canvas/Star'
 
 function App() {
   return (
-    <div className="relative z-0 bg-[#050816] min-h-screen overflow-hidden">
-      {/* 🔹 Bütün səhifə üçün ulduzlu fon */}
+    <div className="relative z-0 bg-[#040412] min-h-screen overflow-hidden">
       <StarsCanvas />
 
       <div className="relative z-10">
