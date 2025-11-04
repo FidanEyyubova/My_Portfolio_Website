@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ComputersCanvas } from "./canvas/Computers";
+// import { ComputersCanvas } from "./canvas/Computers";
 
 const Hero = () => {
   return (
@@ -17,20 +17,20 @@ const Hero = () => {
 
         <div>
           <h1
-            className={`!text-white font-bold lg:text-[40px] sm:text-[26px] xs:text-[20px] text-[40px] lg:leading-[50px]`}
+            className={`text-white font-bold lg:text-[40px] sm:text-[31px] xs:text-[15px] text-[28px] lg:leading-[50px]`}
           >
-            Hi, I'm <span className="text-[#653bd9]">Fidan</span>
+            Hi, I'm <span className="text-[#7248e5]">Fidan</span>
           </h1>
           <p
-            className={`!sm:text-[18px] !text-[25px] uppercase tracking-wider mt-5 `}
-          >
-            I build responsive, user-friendly, <br className="sm:block hidden" />
-            and visually appealing web apps.
-          </p>
+  className="lg:text-[28px] sm:text-[26px] xs:text-[10px] text-[17px] lg:leading-[50px] uppercase tracking-wider mt-5 font-semibold text-[#c5c5ca]"
+>
+  I build responsive, user-friendly, <br className="sm:block hidden" />
+  and visually appealing web apps.
+</p>
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
       <div className="absolute xs:bottom-10 bottom-3 w-full flex justify-center items-center z-10">
         <a href="#about">
