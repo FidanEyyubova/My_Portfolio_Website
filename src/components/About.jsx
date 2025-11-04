@@ -9,7 +9,9 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+     className="w-full bg-gradient-to-t from-blue-800 to-purple-800 p-[1px] rounded-[20px] shadow-card"
+
+
     >
       <div
         options={{
@@ -40,14 +42,14 @@ const About = () => {
         <p className="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]">
           Introduction
         </p>
-        <h2 className="text-black font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
+        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
           Overview.
         </h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-[#9c9a9a] text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-[#9c9a9a] text-[18px] max-w-3xl leading-[30px]"
       >
         I’m a passionate Front-End Developer who loves creating modern,
         responsive, and user-friendly websites. I enjoy turning ideas into

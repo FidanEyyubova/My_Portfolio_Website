@@ -1,4 +1,4 @@
-import { code } from "../assets";
+import { api, code, react, responsive } from "../assets";
 
 export const navLinks = [
   {
@@ -28,15 +28,15 @@ export const services = [
   },
   {
     title: "React Developer",
-    icon: code,
+    icon: react,
   },
    {
     title: "Responsive Web Designer",
-    icon: code,
+    icon: responsive,
   },
   {
     title: "API & Data Integration",
-    icon: code,
+    icon: api,
   },
 ];
 export const experiences = [
@@ -59,32 +59,6 @@ export const experiences = [
     icon: "tesla",
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: "shopify",
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: "meta",
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -134,18 +108,30 @@ export const education = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
+];
+
+
+export const education2 = [
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: "meta",
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    title: "Bachelor of Communication Systems Engineering",
+    institution: "Azerbaijan Technical University",
+    year: "2021 - 2025",
+    description:
+      "Focused on networking, programming, and modern communication technologies.",
+  },
+  {
+    title: "Frontend Development Internship",
+    institution: "Intern Intelligence",
+    year: "2025",
+    description:
+      "Worked on React-based projects, including a modern login page and dashboard systems.",
+  },
+  {
+    title: "Next.js Advanced Course",
+    institution: "Udemy / Online",
+    year: "2024",
+    description:
+      "Learned SSR, dynamic routing, and API integration with Next.js.",
   },
 ];
 

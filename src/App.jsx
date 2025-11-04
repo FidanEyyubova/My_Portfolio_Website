@@ -8,6 +8,7 @@ import Education from './components/Education'
 import Works from './components/Works'
 import Contact from './components/Contact'
 import StarsCanvas from './components/canvas/Star'
+import ScrollToTop from './components/canvas/ScrollToTop'
 
 function App() {
   return (
@@ -21,10 +22,11 @@ function App() {
         <Experience />
         <Tech />
         <Education />
-        <Certificate />
         <Works />
+        <Certificate />
         <Contact />
       </div>
+      <ScrollToTop />
     </div>
   );
 }

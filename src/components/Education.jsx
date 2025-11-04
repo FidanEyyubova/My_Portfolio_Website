@@ -1,81 +1,54 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-
-import "react-vertical-timeline-component/style.min.css";
-
-import { education} from "../constants";
+import { education } from "../constants";
 import { SectionWrapper } from "../section";
 import { textVariant } from "../utils/motion";
-
-const EducationCard = ({ education }) => {
-  return (
-    <VerticalTimelineElement
-      contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
-      }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={education.date}
-      iconStyle={{ background: education.iconBg }}
-      icon={
-        <div className='flex justify-center items-center w-full h-full'>
-          <img
-            src={education.icon}
-            alt={education.company_name}
-            className='w-[60%] h-[60%] object-contain'
-          />
-        </div>
-      }
-    >
-      <div>
-        <h3 className='text-white text-[24px] font-bold'>{education.title}</h3>
-        <p
-          className='text-secondary text-[16px] font-semibold'
-          style={{ margin: 0 }}
-        >
-          {education.company_name}
-        </p>
-      </div>
-
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {education.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
-          >
-            {point}
-          </li>
-        ))}
-      </ul>
-    </VerticalTimelineElement>
-  );
-};
 
 const Education = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider text-center`}>
+        <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider text-center">
           What I have done so far
         </p>
-        <h2 className={`text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center`}>
-          Work Experience.
+        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center">
+          Education
         </h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-col'>
-        <VerticalTimeline>
-          {education.map((education, index) => (
-            <EducationCard
-              key={`experience-${index}`}
-              education={education}
-            />
+      <section className="py-16 px-6 sm:px-6">
+        {/* ✅ Flex layout ilə responsiv və mərkəzlənmiş düzülüş */}
+        <div className="flex justify-center items-center gap-10 mt-10 flex-col lg:flex-row">
+          {education.map((item, index) => (
+            <div
+              key={index}
+              className="relative group w-full lg:w-[400px] h-[200px] rounded-[16px] overflow-hidden 
+                         transition-all duration-700 ease-in-out
+                         hover:scale-105 hover:rotate-[2deg]
+                         bg-[#0d0f20] shadow-[0_0_20px_rgba(0,0,0,0.6)]
+                         hover:shadow-[0_0_40px_8px_rgba(128,0,255,0.6)]
+                         cursor-pointer
+                         "
+            >
+              {/* İç content */}
+              <div className="relative z-10 flex flex-col items-center justify-center w-full h-full rounded-[16px] border border-[#1d1d1d] text-white/85 p-6">
+                <p className="text-xl font-semibold text-[#e5e7ff]">
+                  {item.title}
+                </p>
+                <p className="text-xs text-[#b8bbe0] mt-[-4px] self-end mr-4">
+                  Education
+                </p>
+                <p className="text-base text-[#d7daff] mt-auto mb-1">
+                  {item.institution}
+                </p>
+                <p className="text-[14px] text-gray-300 opacity-90 leading-snug text-center">
+                  {item.description}
+                </p>
+                <p className="text-xs text-gray-400 mt-2">{item.year}</p>
+              </div>
+            </div>
           ))}
-        </VerticalTimeline>
-      </div>
+        </div>
+      </section>
     </>
   );
 };
