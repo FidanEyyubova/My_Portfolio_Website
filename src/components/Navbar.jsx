@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav
       className={`!sm:px-15 !px-5 
       w-full flex items-center 
-      !py-5 fixed top-0 z-20  bg-[#050816]`}
+      !py-5 fixed top-0 z-20  bg-[#040412]`}
     >
       <div
         className="w-full flex justify-end items-center
@@ -23,7 +23,7 @@ const Navbar = () => {
               className={`
     ${active === Link.title ? "text-white" : "text-[#9c9a9a]"}
     hover:text-white 
-    text-[18px]
+    text-[20px]
     font-medium
     cursor-pointer
     transition 
