@@ -1,4 +1,4 @@
-import { api, code, react, responsive } from "../assets";
+import { api, code, icta, react, responsive, rockvell } from "../assets";
 
 export const navLinks = [
   {
@@ -41,11 +41,12 @@ export const services = [
 ];
 export const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: "starbucks",
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Front-end Developer – AI Job Startup",
+    company_name: "Rockvell Tech",
+     place: "Baku, Azerbaijan",
+    icon: rockvell,
+    iconBg: "#cdd1ce",
+    date: "Oct 2025 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -54,18 +55,20 @@ export const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: "tesla",
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Front-end Developer Intern",
+    company_name: "Information Communication Technologies Agency",
+    place: "Baku, Azerbaijan",
+    icon: icta,
+    iconBg: "#cdd1ce",
+    date: "July 2025 - Sep 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Contributed to the development and maintenance of dynamic and responsive web applications using React.js and related modern technologies.",
+      "Collaborated with designers, product managers, and developers to build user-centric interfaces that align with project goals and design standards.",
+      "Implemented responsive layouts and ensured cross-browser compatibility for consistent performance across all devices.",
+      "Participated in code reviews, shared best practices, and provided constructive feedback to enhance code quality and maintainability.",
     ],
   },
+  
 ];
 
 export const education = [

@@ -4,6 +4,8 @@ import code from "./code2.png"
 import responsive from "./responsive.png"
 import api from "./api.png"
 import react from "./software.png"
+import icta from "./icta.svg"
+import rockvell from "./rockvell.jpg"
 
 export {
   menu,
@@ -11,5 +13,7 @@ export {
   code,
   responsive,
   api,
-  react
+  react,
+  icta,
+  rockvell
 };
