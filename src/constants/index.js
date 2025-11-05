@@ -1,4 +1,4 @@
-import { api, bootstrap, code, css, figma, html, icta, javascript, nextjs, react, reactjs, redux, responsive, rockvell, sass, tailwindcss, typescript } from "../assets";
+import { api, bootstrap, code, css, figma, gameverse, html, icta, javascript, nextjs, react, reactjs, redux, responsive, rockvell, sass, tailwindcss, typescript } from "../assets";
 
 
 export const navLinks = [
@@ -73,45 +73,28 @@ export const experiences = [
 ];
 
 export const education = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: "starbucks",
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: "tesla",
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: "shopify",
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+{
+  title: "Front-end Development",
+  institution: "Code-Camp UNEC & Matrix Academy",
+  year: "Oct 2024 - Feb 2025",
+  description:
+    "Learned HTML, CSS, JS, and React fundamentals for modern web apps.",
+},
+{
+  title: "Front-end Development",
+  institution: "Matrix Academy",
+  year: "July 2024 - Jan 2025",
+  description:
+    "Practiced frontend coding and built React-based web projects.",
+},
+{
+  title: "BSc in Communication Systems Engineering",
+  institution: "UNEC",
+  year: "Sep 2021 - July 2025",
+  description:
+    "Studied networking, signal processing, and communication systems.",
+},
+
 ];
 
 
@@ -231,54 +214,12 @@ export const reviews = [
 
 export const projects = [
   {
-    name: "Car Rent",
+    name: "GameVerse",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "E-commerce website that allows users to browse, purchase, and manage video games online, providing a convenient and engaging platform for digital game shopping.",
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "carrent",
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "jobit",
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
@@ -286,11 +227,13 @@ export const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "bootstrap",
         color: "pink-text-gradient",
       },
     ],
-    image: "tripguide",
-    source_code_link: "https://github.com/",
+    image: gameverse,
+    source_code_link: "https://github.com/FidanEyyubova/Final-Project-GameVerse",
+    live_code_link: "https://gameverse-ecommerce.netlify.app/",
   },
+ 
 ];

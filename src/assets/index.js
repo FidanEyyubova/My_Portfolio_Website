@@ -17,6 +17,7 @@ import nextjs from "../assets/tech/nextjs.svg"
 import figma from "../assets/tech/figma2.png"
 import tailwindcss from "../assets/tech/tailwind.svg"
 import sass from "../assets/tech/sass.png"
+import gameverse from "../assets/gameverse.png"
 
 export {
   menu,
@@ -37,5 +38,6 @@ export {
   nextjs,
   figma,
   tailwindcss,
-  sass
+  sass,
+  gameverse
 };
