@@ -1,4 +1,5 @@
-import { api, code, icta, react, responsive, rockvell } from "../assets";
+import { api, bootstrap, code, css, figma, html, icta, javascript, nextjs, react, reactjs, redux, responsive, rockvell, sass, tailwindcss, typescript } from "../assets";
+
 
 export const navLinks = [
   {
@@ -141,56 +142,50 @@ export const education2 = [
 export const technologies = [
   {
     name: "HTML 5",
-    icon: "html",
+    icon: html,
   },
   {
-    name: "CSS 3",
-    icon: "css",
+    name: "Cascading Style Sheets",
+    icon: css,
+  },
+   {
+    name: "Bootstrap",
+    icon: bootstrap,
+  },
+   {
+    name: "Javascript",
+    icon: javascript,
+  },
+   {
+    name: "ReactJS",
+    icon: reactjs,
   },
   {
-    name: "JavaScript",
-    icon: "javascript",
+    name: "Redux",
+    icon: redux,
   },
   {
-    name: "TypeScript",
-    icon: "typescript",
+    name: "Typescript",
+    icon: typescript,
   },
   {
-    name: "React JS",
-    icon: "reactjs",
+    name: "NextJS",
+    icon: nextjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: "redux",
+    name: "Figma",
+    icon: figma,
   },
+
   {
     name: "Tailwind CSS",
-    icon: "tailwind",
+    icon: tailwindcss,
   },
   {
-    name: "Node JS",
-    icon: "nodejs",
+    name: "SASS",
+    icon: sass,
   },
-  {
-    name: "MongoDB",
-    icon: "mongodb",
-  },
-  {
-    name: "Three JS",
-    icon: "threejs",
-  },
-  {
-    name: "git",
-    icon: "git",
-  },
-  {
-    name: "figma",
-    icon:" figma",
-  },
-  {
-    name: "docker",
-    icon: "docker",
-  },
+
 ];
 
 
