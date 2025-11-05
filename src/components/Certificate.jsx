@@ -2,16 +2,10 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "../section";
 import { textVariant } from "../utils/motion";
 import Marquee from "react-fast-marquee";
+import { certificates } from "../constants";
 
 const Certificate = () => {
-  const certificates = [
-    "React Developer",
-    "Frontend Development",
-    "UI/UX Design",
-    "JavaScript Mastery",
-    "Next.js Specialist",
-    "Tailwind CSS Expert",
-  ];
+
 
   return (
     <>
@@ -20,7 +14,7 @@ const Certificate = () => {
           What I have done so far
         </p>
         <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center">
-          Work Experience.
+          Qualifications.
         </h2>
       </motion.div>
 
@@ -35,9 +29,17 @@ const Certificate = () => {
             {certificates.map((cert, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center h-40 w-80 mr-6 rounded-xl border border-gray-50/10 bg-linear-to-r from-indigo to-storm hover:bg-royal hover:scale-90 transition-transform duration-300 cursor-pointer text-white font-medium"
+                className="flex flex-col items-center justify-center bg-[#0d0f20] h-40 w-80 p-5 mr-6 rounded-xl border border-gray-50/10 bg-linear-to-r from-indigo to-storm hover:bg-royal hover:scale-90 transition-transform duration-300 cursor-pointer text-white font-medium"
               >
-                {cert}
+                 <p className="text-xl text-[#d7daff] mb-1">
+                  {cert.title}
+                </p>
+                 <p className="text-xs text-[#b8bbe0] mt-[-4px] self-end mr-4 mb-3">
+                  {cert.level}
+                </p>
+                <p className="text-[17px] text-gray-300 opacity-90 leading-snug text-center">
+                  {cert.place}
+                </p>
               </div>
             ))}
           </Marquee>

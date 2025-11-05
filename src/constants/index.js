@@ -237,3 +237,27 @@ export const projects = [
   },
  
 ];
+
+
+export const certificates = [
+  {
+    title : "Summer Internship Program",
+    level : "Certificate",
+    place : "Information Communication Technologies Agency"
+  },
+   {
+    title : "Front-end Development",
+    level : "Certificate",
+    place : "Code-Camp UNEC & Matrix academy"
+  },
+   {
+    title : "Front-end Development",
+    level : "Diploma",
+    place : "Matrix academy"
+  },
+   {
+    title : "JavaScript Master Course",
+    level : "Certificate",
+    place : "Udemy"
+  }
+]
