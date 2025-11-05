@@ -38,6 +38,12 @@ const ExperienceCard = ({ experience }) => {
         >
           {experience.company_name}
         </p>
+          <p
+          className='text-[#b0b0b0] text-[16px] font-semibold'
+          style={{ margin: 0 }}
+        >
+          {experience.place}
+        </p>
       </div>
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
