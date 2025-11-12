@@ -1,5 +1,23 @@
-import { api, bootstrap, code, css, figma, gameverse, html, icta, javascript, nextjs, react, reactjs, redux, responsive, rockvell, sass, tailwindcss, typescript } from "../assets";
-
+import {
+  api,
+  bootstrap,
+  code,
+  css,
+  figma,
+  gameverse,
+  html,
+  icta,
+  javascript,
+  nextjs,
+  react,
+  reactjs,
+  redux,
+  responsive,
+  rockvell,
+  sass,
+  tailwindcss,
+  typescript,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -18,12 +36,10 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
- 
- 
 ];
 
 export const services = [
-   {
+  {
     title: "Front-End Developer",
     icon: code,
   },
@@ -31,7 +47,7 @@ export const services = [
     title: "React Developer",
     icon: react,
   },
-   {
+  {
     title: "Responsive Web Designer",
     icon: responsive,
   },
@@ -42,9 +58,9 @@ export const services = [
 ];
 export const experiences = [
   {
-    title: "Front-end Developer – AI Job Startup",
+    title: "Front-end Developer – Startup",
     company_name: "Rockvell Tech",
-     place: "Baku, Azerbaijan",
+    place: "Baku, Azerbaijan",
     icon: rockvell,
     iconBg: "#cdd1ce",
     date: "Oct 2025 - Present",
@@ -69,56 +85,29 @@ export const experiences = [
       "Participated in code reviews, shared best practices, and provided constructive feedback to enhance code quality and maintainability.",
     ],
   },
-  
 ];
 
 export const education = [
-{
-  title: "Front-end Development",
-  institution: "Code-Camp UNEC & Matrix Academy",
-  year: "Oct 2024 - Feb 2025",
-  description:
-    "Learned HTML, CSS, JS, and React fundamentals for modern web apps.",
-},
-{
-  title: "Front-end Development",
-  institution: "Matrix Academy",
-  year: "July 2024 - Jan 2025",
-  description:
-    "Practiced frontend coding and built React-based web projects.",
-},
-{
-  title: "BSc in Communication Systems Engineering",
-  institution: "UNEC",
-  year: "Sep 2021 - July 2025",
-  description:
-    "Studied networking, signal processing, and communication systems.",
-},
-
-];
-
-
-export const education2 = [
   {
-    title: "Bachelor of Communication Systems Engineering",
-    institution: "Azerbaijan Technical University",
-    year: "2021 - 2025",
+    title: "Front-end Development",
+    institution: "Code-Camp UNEC & Matrix Academy",
+    year: "Oct 2024 - Feb 2025",
     description:
-      "Focused on networking, programming, and modern communication technologies.",
+      "Learned HTML, CSS, JS, and React fundamentals for modern web apps.",
   },
   {
-    title: "Frontend Development Internship",
-    institution: "Intern Intelligence",
-    year: "2025",
+    title: "Front-end Development",
+    institution: "Matrix Academy",
+    year: "July 2024 - Jan 2025",
     description:
-      "Worked on React-based projects, including a modern login page and dashboard systems.",
+      "Practiced frontend coding and built React-based web projects.",
   },
   {
-    title: "Next.js Advanced Course",
-    institution: "Udemy / Online",
-    year: "2024",
+    title: "BSc in Communication Systems Engineering",
+    institution: "UNEC",
+    year: "Sep 2021 - July 2025",
     description:
-      "Learned SSR, dynamic routing, and API integration with Next.js.",
+      "Studied networking, signal processing, and communication systems.",
   },
 ];
 
@@ -131,15 +120,15 @@ export const technologies = [
     name: "Cascading Style Sheets",
     icon: css,
   },
-   {
+  {
     name: "Bootstrap",
     icon: bootstrap,
   },
-   {
+  {
     name: "Javascript",
     icon: javascript,
   },
-   {
+  {
     name: "ReactJS",
     icon: reactjs,
   },
@@ -168,9 +157,7 @@ export const technologies = [
     name: "SASS",
     icon: sass,
   },
-
 ];
-
 
 export const reviews = [
   {
@@ -211,7 +198,6 @@ export const reviews = [
   },
 ];
 
-
 export const projects = [
   {
     name: "GameVerse",
@@ -232,32 +218,31 @@ export const projects = [
       },
     ],
     image: gameverse,
-    source_code_link: "https://github.com/FidanEyyubova/Final-Project-GameVerse",
+    source_code_link:
+      "https://github.com/FidanEyyubova/Final-Project-GameVerse",
     live_code_link: "https://gameverse-ecommerce.netlify.app/",
   },
- 
 ];
-
 
 export const certificates = [
   {
-    title : "Summer Internship Program",
-    level : "Certificate",
-    place : "Information Communication Technologies Agency"
+    title: "Summer Internship Program",
+    level: "Certificate",
+    place: "Information Communication Technologies Agency",
   },
-   {
-    title : "Front-end Development",
-    level : "Certificate",
-    place : "Code-Camp UNEC & Matrix academy"
+  {
+    title: "Front-end Development",
+    level: "Certificate",
+    place: "Code-Camp UNEC & Matrix academy",
   },
-   {
-    title : "Front-end Development",
-    level : "Diploma",
-    place : "Matrix academy"
+  {
+    title: "Front-end Development",
+    level: "Diploma",
+    place: "Matrix academy",
   },
-   {
-    title : "JavaScript Master Course",
-    level : "Certificate",
-    place : "Udemy"
-  }
-]
+  {
+    title: "JavaScript Master Course",
+    level: "Certificate",
+    place: "Udemy",
+  },
+];
