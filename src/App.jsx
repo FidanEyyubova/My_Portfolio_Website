@@ -9,10 +9,12 @@ import Works from './components/Works'
 import Contact from './components/Contact'
 import StarsCanvas from './components/canvas/Star'
 import ScrollToTop from './components/canvas/ScrollToTop'
+import { Pointer } from './components/canvas/Pointer'
 
 function App() {
   return (
     <div className="relative z-0 bg-[#040412] min-h-screen overflow-hidden">
+      <Pointer />
       <StarsCanvas />
 
       <div className="relative z-10">
