@@ -1,5 +1,4 @@
 import { Html, useProgress } from "@react-three/drei";
-import { div } from "framer-motion/client";
 
 const CanvasLoader = () => {
   const { progress } = useProgress();

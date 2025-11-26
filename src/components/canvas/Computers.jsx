@@ -9,16 +9,18 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-      <ambientLight intensity={0.5} />
-      <directionalLight
-        position={[10, 15, 10]}
-        intensity={2.5}
-        color="#fff7e6"
-        castShadow
-        shadow-mapSize-width={2048}
-        shadow-mapSize-height={2048}
-      />
-      <pointLight position={[0, 10, 0]} intensity={2} color="#ffdca8" />
+<ambientLight intensity={0.15} />  // əvvəl 0.3 idi
+<directionalLight
+  position={[10, 15, 10]}
+  intensity={1}   // əvvəl 1.5 idi
+  color="#fff2e6"  // daha sərin ton
+  castShadow
+  shadow-mapSize-width={2048}
+  shadow-mapSize-height={2048}
+/>
+<pointLight position={[0, 10, 0]} intensity={0.5} color="#ffe5b4" />  // əvvəl 1 idi
+
+
 
       <primitive
         object={computer.scene}
