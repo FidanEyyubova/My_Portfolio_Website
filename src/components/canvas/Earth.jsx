@@ -6,6 +6,7 @@ import CanvasLoader from "../Loader";
 
 const Earth = () => {
   const earth = useGLTF("/mail2/scene.gltf");
+    if (!earth?.scene) return null;
 
   return (
     <primitive
