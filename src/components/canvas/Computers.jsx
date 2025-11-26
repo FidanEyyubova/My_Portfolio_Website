@@ -8,12 +8,7 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight
-        intensity={1}
-        skyColor={"#ffffff"}
-        groundColor={"#222222"}
-      />
-
+      <ambientLight intensity={0.5} />
       <directionalLight
         position={[10, 15, 10]}
         intensity={2.5}
@@ -22,7 +17,6 @@ const Computers = ({ isMobile }) => {
         shadow-mapSize-width={2048}
         shadow-mapSize-height={2048}
       />
-
       <pointLight position={[0, 10, 0]} intensity={2} color="#ffdca8" />
 
       <primitive
@@ -40,7 +34,6 @@ export const ComputersCanvas = () => {
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
-
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event) => {
