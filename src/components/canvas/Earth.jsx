@@ -33,8 +33,14 @@ export const EarthCanvas = () => {
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <ambientLight intensity={1.2} />
-        <directionalLight position={[5, 5, 5]} intensity={1.5} castShadow />
+       <ambientLight intensity={0.3} />   // əvvəl 1.2 idi, indi daha yumşaq
+<directionalLight 
+  position={[5, 5, 5]} 
+  intensity={0.8}   // əvvəl 1.5 idi, daha az parlaq
+  castShadow 
+  color="#fff2e6"   // bir az daha sərin ton
+/>
+
 
         <OrbitControls
           enableZoom={false}
