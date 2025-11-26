@@ -5,22 +5,20 @@ import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("/desktop_pc/scene.gltf");
-    if (!computer?.scene) return null;
+  if (!computer?.scene) return null;
 
   return (
     <mesh>
-<ambientLight intensity={0.15} />  // əvvəl 0.3 idi
-<directionalLight
-  position={[10, 15, 10]}
-  intensity={1}   // əvvəl 1.5 idi
-  color="#fff2e6"  // daha sərin ton
-  castShadow
-  shadow-mapSize-width={2048}
-  shadow-mapSize-height={2048}
-/>
-<pointLight position={[0, 10, 0]} intensity={0.5} color="#ffe5b4" />  // əvvəl 1 idi
-
-
+      <ambientLight intensity={0.08} />
+      <directionalLight
+        position={[10, 15, 10]}
+        intensity={0.7}
+        color="#fff2e6"
+        castShadow
+        shadow-mapSize-width={2048}
+        shadow-mapSize-height={2048}
+      />
+      <pointLight position={[0, 10, 0]} intensity={0.3} color="#ffe5b4" />
 
       <primitive
         object={computer.scene}

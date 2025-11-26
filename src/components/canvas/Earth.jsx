@@ -6,7 +6,7 @@ import CanvasLoader from "../Loader";
 
 const Earth = () => {
   const earth = useGLTF("/mail2/scene.gltf");
-    if (!earth?.scene) return null;
+  if (!earth?.scene) return null;
 
   return (
     <primitive
@@ -33,22 +33,19 @@ export const EarthCanvas = () => {
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
-       <ambientLight intensity={0.3} />   // əvvəl 1.2 idi, indi daha yumşaq
-<directionalLight 
-  position={[5, 5, 5]} 
-  intensity={0.8}   // əvvəl 1.5 idi, daha az parlaq
-  castShadow 
-  color="#fff2e6"   // bir az daha sərin ton
-/>
-
-
+        <ambientLight intensity={0.3} /> // əvvəl 1.2 idi, indi daha yumşaq
+        <directionalLight
+          position={[5, 5, 5]}
+          intensity={0.8}
+          castShadow
+          color="#fff2e6"
+        />
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
         <Earth />
-
         <Preload all />
       </Suspense>
     </Canvas>

@@ -28,7 +28,6 @@ const Education = () => {
                          cursor-pointer
                          "
             >
-              {/* İç content */}
               <div className="relative z-10 flex flex-col items-center justify-center w-full h-full rounded-[16px] border border-[#1d1d1d] text-white/85 p-6">
                 <p className="text-xl text-center font-semibold text-[#e5e7ff]">
                   {item.title}

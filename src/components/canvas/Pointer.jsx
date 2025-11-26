@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useMotionValue } from "framer-motion";
 
