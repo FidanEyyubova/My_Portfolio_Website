@@ -13,13 +13,11 @@ const Ball = ({ imgUrl }) => {
   const [decal] = useTexture([imgUrl]);
   if (!decal) return null;
 
-
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-      {/* Removed hemisphereLight (problem source) */}
-      <directionalLight position={[5, 5, 5]} intensity={1.5} castShadow />
-      <pointLight position={[-3, 3, 3]} intensity={1.2} />
-      <ambientLight intensity={0.5} />
+      <directionalLight position={[5, 5, 5]} intensity={0.6} castShadow />
+      <pointLight position={[-3, 3, 3]} intensity={0.4} />
+      <ambientLight intensity={0.2} />
 
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
