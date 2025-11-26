@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import { services } from "../constants";
-import { SectionWrapper } from "../section/index";
+import  {SectionWrapper}  from "../section/index.js";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (

@@ -14,7 +14,7 @@ const Ball = ({ imgUrl }) => {
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-      <hemisphereLight intensity={1.2} groundColor="black" color="#ffffff" />
+      {/* Removed hemisphereLight (problem source) */}
       <directionalLight position={[5, 5, 5]} intensity={1.5} castShadow />
       <pointLight position={[-3, 3, 3]} intensity={1.2} />
       <ambientLight intensity={0.5} />
