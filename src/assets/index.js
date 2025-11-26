@@ -18,6 +18,7 @@ import figma from "../assets/tech/figma2.png"
 import tailwindcss from "../assets/tech/tailwind.svg"
 import sass from "../assets/tech/sass.png"
 import gameverse from "../assets/gameverse.png"
+import chitchat from "../assets/chitchat.jpeg"
 
 export {
   menu,
@@ -39,5 +40,6 @@ export {
   figma,
   tailwindcss,
   sass,
-  gameverse
+  gameverse,
+  chitchat
 };

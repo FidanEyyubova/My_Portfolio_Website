@@ -16,7 +16,6 @@ const Education = () => {
       </motion.div>
 
       <section className="py-16 px-6 sm:px-6">
-        {/* ✅ Flex layout ilə responsiv və mərkəzlənmiş düzülüş */}
         <div className="flex justify-center items-center gap-10 mt-10 flex-col lg:flex-row">
           {education.map((item, index) => (
             <div

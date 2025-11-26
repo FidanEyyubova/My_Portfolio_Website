@@ -1,7 +1,5 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-
-// import { github } from "../assets";
 import { SectionWrapper } from "../section";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -33,7 +31,6 @@ const ProjectCard = ({
           />
 
           <div className="absolute inset-0 flex flex-col justify-start items-end gap-3 m-3 card-img_hover">
-            {/* 1-ci div */}
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="bg-white w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
@@ -41,11 +38,10 @@ const ProjectCard = ({
               <img
                 src="/github.svg"
                 alt="source code"
-                className="w-5 object-contain"
+                className="w-5 object-contain cursor-pointer"
               />
             </div>
 
-            {/* 2-ci div */}
             <div
               onClick={() => window.open(live_code_link, "_blank")}
               className="bg-white w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
@@ -53,7 +49,7 @@ const ProjectCard = ({
               <img
                 src="/arrow.svg"
                 alt="source code"
-                className="w-5 object-contain"
+                className="w-5 object-contain cursor-pointer"
               />
             </div>
           </div>

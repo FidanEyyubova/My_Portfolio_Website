@@ -34,7 +34,11 @@ const Contact = () => {
       toast.error("All fields are required.", {
         position: "top-right",
         autoClose: 5000,
-        style: { backgroundColor: "#dc3545", color: "#fff", fontWeight: "bold" },
+        style: {
+          backgroundColor: "#dc3545",
+          color: "#fff",
+          fontWeight: "bold",
+        },
       });
       return;
     }
@@ -43,7 +47,11 @@ const Contact = () => {
       toast.error("Please enter a valid email address.", {
         position: "top-right",
         autoClose: 5000,
-        style: { backgroundColor: "#dc3545", color: "#fff", fontWeight: "bold" },
+        style: {
+          backgroundColor: "#dc3545",
+          color: "#fff",
+          fontWeight: "bold",
+        },
       });
       return;
     }
@@ -55,22 +63,29 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
-          from_name: form.name,
-          to_name: "Fidan Eyyubova",
-          from_email: form.email,
-          to_email: "fidaneyybva0@gmail.com",
+          name: form.name,
+          email: form.email,
           message: form.message,
+          time: new Date().toLocaleString(),
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
+
       .then(
         () => {
           setLoading(false);
-          toast.success("Thank you. I will get back to you as soon as possible.", {
-            position: "top-right",
-            autoClose: 5000,
-            style: { backgroundColor: "#28a745", color: "#fff", fontWeight: "bold" },
-          });
+          toast.success(
+            "Thank you. I will get back to you as soon as possible.",
+            {
+              position: "top-right",
+              autoClose: 5000,
+              style: {
+                backgroundColor: "#28a745",
+                color: "#fff",
+                fontWeight: "bold",
+              },
+            }
+          );
 
           setForm({ name: "", email: "", message: "" });
         },
@@ -80,7 +95,11 @@ const Contact = () => {
           toast.error("Something went wrong. Please try again.", {
             position: "top-right",
             autoClose: 5000,
-            style: { backgroundColor: "#dc3545", color: "#fff", fontWeight: "bold" },
+            style: {
+              backgroundColor: "#dc3545",
+              color: "#fff",
+              fontWeight: "bold",
+            },
           });
         }
       );
@@ -99,7 +118,11 @@ const Contact = () => {
           Contact.
         </h3>
 
-        <form ref={formRef} onSubmit={handleSubmit} className="mt-8 flex flex-col gap-8">
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="mt-8 flex flex-col gap-8"
+        >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input
@@ -166,9 +189,9 @@ const Contact = () => {
         draggable
         pauseOnHover
         style={{
-    zIndex: 9999,
-    top: "80px",
-  }}
+          zIndex: 9999,
+          top: "80px",
+        }}
       />
     </div>
   );

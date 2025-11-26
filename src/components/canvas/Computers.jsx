@@ -3,25 +3,27 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("/desktop_pc/scene.gltf");
 
   return (
     <mesh>
-      <hemisphereLight intensity={1} skyColor={"#ffffff"} groundColor={"#222222"} />
+      <hemisphereLight
+        intensity={1}
+        skyColor={"#ffffff"}
+        groundColor={"#222222"}
+      />
 
-<directionalLight
-  position={[10, 15, 10]}
-  intensity={2.5}
-  color="#fff7e6"
-  castShadow
-  shadow-mapSize-width={2048}
-  shadow-mapSize-height={2048}
-/>
+      <directionalLight
+        position={[10, 15, 10]}
+        intensity={2.5}
+        color="#fff7e6"
+        castShadow
+        shadow-mapSize-width={2048}
+        shadow-mapSize-height={2048}
+      />
 
-<pointLight position={[0, 10, 0]} intensity={2} color="#ffdca8" />
-
+      <pointLight position={[0, 10, 0]} intensity={2} color="#ffdca8" />
 
       <primitive
         object={computer.scene}
