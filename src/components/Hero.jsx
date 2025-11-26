@@ -11,8 +11,7 @@ const Hero = () => {
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#653bd9]" />
-         <div className="w-1 sm:h-80 h-40 rounded violet-gradient" />
-
+          <div className="w-1 sm:h-80 h-40 rounded violet-gradient" />
         </div>
 
         <div>
@@ -21,12 +20,11 @@ const Hero = () => {
           >
             Hi, I'm <span className="text-[#7248e5]">Fidan</span>
           </h1>
-          <p
-  className="lg:text-[28px] sm:text-[26px] xs:text-[10px] text-[17px] lg:leading-[50px] uppercase tracking-wider mt-5 font-semibold text-[#c5c5ca]"
->
-  I build responsive, user-friendly, <br className="sm:block hidden" />
-  and visually appealing web apps.
-</p>
+          <p className="lg:text-[28px] sm:text-[26px] xs:text-[10px] text-[17px] lg:leading-[50px] uppercase tracking-wider mt-5 font-semibold text-[#c5c5ca]">
+            I build responsive, user-friendly,{" "}
+            <br className="sm:block hidden" />
+            and visually appealing web apps.
+          </p>
         </div>
       </div>
 

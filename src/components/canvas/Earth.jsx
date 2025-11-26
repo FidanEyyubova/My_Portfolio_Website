@@ -11,8 +11,8 @@ const Earth = () => {
     <primitive
       object={earth.scene}
       scale={0.035}
-      position={[0.30, -0.30, 0]}
-      rotation={[0.600, -Math.PI / -50, 0]} // 🔹 X: yuxarıdan baxış, Y: 3/4 bucaq
+      position={[0.3, -0.3, 0]}
+      rotation={[0.6, -Math.PI / -50, 0]}
     />
   );
 };
@@ -21,7 +21,7 @@ export const EarthCanvas = () => {
   return (
     <Canvas
       shadows
-      frameloop='demand'
+      frameloop="demand"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{
@@ -32,13 +32,8 @@ export const EarthCanvas = () => {
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        {/* İşıqlar əlavə edildi */}
-        <ambientLight intensity={1.2} /> {/* Ümumi işıq, default 0.5 */}
-        <directionalLight
-          position={[5, 5, 5]}
-          intensity={1.5}
-          castShadow
-        /> {/* Günəş işığı effekti */}
+        <ambientLight intensity={1.2} />
+        <directionalLight position={[5, 5, 5]} intensity={1.5} castShadow />
 
         <OrbitControls
           enableZoom={false}
@@ -52,8 +47,5 @@ export const EarthCanvas = () => {
     </Canvas>
   );
 };
-
-
-
 
 export default EarthCanvas;

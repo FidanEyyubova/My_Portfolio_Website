@@ -17,6 +17,7 @@ import {
   sass,
   tailwindcss,
   typescript,
+  chitchat,
 } from "../assets";
 
 export const navLinks = [
@@ -221,6 +222,33 @@ export const projects = [
     source_code_link:
       "https://github.com/FidanEyyubova/Final-Project-GameVerse",
     live_code_link: "https://gameverse-ecommerce.netlify.app/",
+  },
+  {
+    name: "Chitchat",
+    description:
+      "A modern, real-time chat app built with the MERN stack using Socket.io for real-time messaging, Tailwind CSS and Animate.css for UI, and React Hot Toast & Axios for frontend interactions.",
+    tags: [
+      {
+        name: "node.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "socket.io",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind.css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: chitchat,
+    source_code_link:
+      "https://github.com/FidanEyyubova/Real_Time_Chat_App_MERN",
+    live_code_link: "https://real-time-chat-app-mern-frontend.onrender.com/",
   },
 ];
 

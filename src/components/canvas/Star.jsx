@@ -11,7 +11,6 @@ const Stars = (props) => {
 
   useFrame((state, delta) => {
     if (ref.current) {
-      // Yalnız ulduzları yavaş döndəririk
       ref.current.rotation.y += delta * 0.02;
       ref.current.rotation.x += delta * 0.01;
     }

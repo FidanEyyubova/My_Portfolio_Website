@@ -1,8 +1,8 @@
-  @layer theme, base, components, utilities;
+@layer theme, base, components, utilities;
 
-  @import "tailwindcss/theme.css" layer(theme);
-  @import "tailwindcss/preflight.css" layer(base);
-  @import "tailwindcss/utilities.css" layer(utilities);
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
@@ -19,17 +19,9 @@
 }
 
 .black-gradient {
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
 }
 
 .violet-gradient {
@@ -52,17 +44,15 @@
 .green-text-gradient,
 .blue-text-gradient,
 .pink-text-gradient {
-  /* Fallback background for old browsers */
   background: #f12711;
   background: linear-gradient(to top, #f12711, #f5af19);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; /* standard property for future compatibility */
-  color: transparent; /* fallback */
+  background-clip: text;
+  color: transparent;
 }
 
-/* canvas- styles */
 .canvas-loader {
   font-size: 10px;
   width: 1em;
@@ -150,7 +140,6 @@
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
-
 
 * {
   cursor: none !important;

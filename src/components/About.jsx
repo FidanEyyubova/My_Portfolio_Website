@@ -9,9 +9,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-     className="w-full bg-gradient-to-t from-blue-800 to-purple-800 p-[1px] rounded-[20px] shadow-card"
-
-
+      className="w-full bg-gradient-to-t from-blue-800 to-purple-800 p-[1px] rounded-[20px] shadow-card"
     >
       <div
         options={{
@@ -58,16 +56,18 @@ const About = () => {
         My goal is to build web experiences that people enjoy using every day.
       </motion.p>
 
-      <div className="mt-20 grid gap-10 
+      <div
+        className="mt-20 grid gap-10 
                 grid-cols-1 
                 sm:grid-cols-2 
                 lg:grid-cols-4
                 cursor-pointer
-                ">
-  {services.map((service, index) => (
-    <ServiceCard key={service.title} index={index} {...service} />
-  ))}
-</div>
+                "
+      >
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
     </div>
   );
 };

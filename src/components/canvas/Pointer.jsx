@@ -9,12 +9,10 @@ export function Pointer({ className, style, children, ...props }) {
   const [visible, setVisible] = useState(true);
   const [hovering, setHovering] = useState(false);
 
-  // ✅ cn funksiyası daxildə
   function cn(...classes) {
     return classes.filter(Boolean).join(" ");
   }
 
-  // ✅ Default browser pointer tam gizlədilir
   useEffect(() => {
     document.body.style.cursor = "none";
     return () => {
@@ -22,7 +20,6 @@ export function Pointer({ className, style, children, ...props }) {
     };
   }, []);
 
-  // ✅ Mouse hərəkətini izləyirik
   useEffect(() => {
     const move = (e) => {
       x.set(e.clientX);
@@ -49,7 +46,6 @@ export function Pointer({ className, style, children, ...props }) {
     };
   }, [visible, x, y]);
 
-  // ✅ Hover zamanı pointer böyüyür
   useEffect(() => {
     const handleOver = (e) => {
       if (["A", "BUTTON", "INPUT", "TEXTAREA"].includes(e.target.tagName)) {
